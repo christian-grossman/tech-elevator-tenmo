@@ -1,0 +1,32 @@
+
+
+When a new user registers a new account is created for them - DONE
+    Initial balance of $1000 - DONE
+    Account IDs start at 2001 - DONE
+
+(need endpoint to see username and balance based on my userid) - DONE
+As an authenticated user of the system. I need to be able to see my account balance - DONE
+    Output should only include username and balance, request should only contain token - DONE
+
+(need new endpoint that shows all users) - DONE
+(need new endpoint to post transfer including amount recipient name in body and token) - DONE
+(need new table in sql for transfers) - DONE
+As an authenticated user of the system,
+I need to be able to send a transfer of a specific amount of TE bucks to a registered user - DONE
+    Need endpoint that shows all users - DONE
+    Don't allow sending money to myself - DONE
+    Transfer includes username of the recipient and amount - DONE
+    Receiver's account balance is increased by the amount - DONE
+    Sender's account balance is decreased by the amount - DONE
+    Can't send more than I have in my account - DONE
+    Can't send 0 or less - DONE
+    Transfer has initial status of APPROVED - DONE
+    Transfer IDs start at 3001 - DONE
+    Request body should include amount and recipient name (token in auth) - DONE
+    Successful response should have response code 201 Created - DONE
+
+(need new endpoint to show transfer i'm part of, do not show user id)
+As an authenticated user of the system, I need to be able to see transfer I have sent or received - DONE
+
+(need new endpoint to look up a specific transfer by id do not show user id)
+As an authenticated user of the system, I need to be able to look up a transfer by id - DONE
